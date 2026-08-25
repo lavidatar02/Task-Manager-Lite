@@ -138,16 +138,11 @@ The application will then be available on your local development server.
 ---
 
 ## 📸 Screenshots
+   Dashboard
+   ![Dashboard alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/01_Dashboard.png?raw=true)
 
-Add screenshots of the project here to showcase the interface.
+   
 
-```text
-screenshots/
-│
-├── dashboard.png
-├── pending-tasks.png
-├── in-progress.png
-└── completed-tasks.png
 ```
 
 ---
