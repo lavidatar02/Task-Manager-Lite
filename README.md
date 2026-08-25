@@ -70,17 +70,27 @@ The application focuses on a clean and modern dashboard experience with:
 
 ```text
 Task-Manager-Lite/
+│
 ├── public/
+│   ├── [your existing public file 1]
+│   └── [your existing public file 2]
+│
 ├── src/
 │   ├── components/
 │   ├── pages/
 │   ├── App.jsx
 │   └── main.jsx
+│
+├── .gitignore
+├── README.md
+├── index.html
 ├── package.json
 ├── package-lock.json
-├── README.md
-├── vite.config.js
-└── .gitignore
+├── script.js
+├── style.css
+├── tsconfig.json
+├── vercel.json
+└── vite.config.ts
 ```
 
 > The exact structure may vary depending on the project configuration.
