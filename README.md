@@ -139,7 +139,12 @@ The application will then be available on your local development server.
 
 ## 📸 Screenshots
    Dashboard
+   
    ![Dashboard alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/01_Dashboard.png?raw=true)
+
+   Pending Task
+   
+   ![Pending Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/02_Pending%20Tasks.png?raw=true)
 
    
 
