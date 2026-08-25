@@ -152,7 +152,8 @@ The application will then be available on your local development server.
    
 
    ✅Completed Task
-  ![Completed Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/04_Completed%20Tasks.png?raw=true)
+   
+   ![Completed Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/04_Completed%20Tasks.png?raw=true)
 
 ```
 
