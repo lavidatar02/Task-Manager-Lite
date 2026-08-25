@@ -175,7 +175,7 @@ Some features that can be added in future versions:
 
 ## 👨‍💻 Developer
 
-**Lavi Shriram Datar**
+**Lavi Datar**
 
 *B.Sc. Computer Science Graduate*
 
