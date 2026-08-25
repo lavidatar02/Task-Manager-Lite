@@ -2,7 +2,7 @@
 > A modern and responsive task management web application for creating, organizing, and tracking tasks with Pending, In Progress, and Completed statuses.
 
 ## 🌐 Live Demo
-🔗 **[Task Manager Lite](https://v0-taskmanagerlite-projects.vercel.app/v)**
+🔗 **[Task Manager Lite](https://v0-taskmanagerlite-projects.vercel.app/)**
 
 ---
 
@@ -188,7 +188,7 @@ Some features that can be added in future versions:
 ## 🌐 Live Project
 
 🚀 **Try Task Manager Lite:**
-https://v0-taskmanagerlite-projects.vercel.app/v
+https://v0-taskmanagerlite-projects.vercel.app/
 
 ---
 
