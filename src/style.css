@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --font-sans: var(--app-font-sans);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --background: 240 24% 96%;
+  --foreground: 225 23% 18%;
+  --border: 230 18% 91%;
+  --input: 230 18% 88%;
+  --ring: 268 91% 55%;
+  --card: 0 0% 100%;
+  --card-foreground: 225 23% 18%;
+  --card-border: 230 18% 91%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 225 23% 18%;
+  --popover-border: 230 18% 88%;
+  --primary: 268 91% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 240 20% 96%;
+  --secondary-foreground: 225 23% 25%;
+  --muted: 240 20% 95%;
+  --muted-foreground: 230 10% 54%;
+  --accent: 268 91% 95%;
+  --accent-foreground: 268 75% 35%;
+  --destructive: 350 62% 56%;
+  --destructive-foreground: 0 0% 100%;
+  --app-font-sans: 'DM Sans', ui-sans-serif, sans-serif;
+  --radius: 0.5rem;
+  --spacing: 0.25rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    background: hsl(var(--background));
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    margin: 0;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.18);
+  }
+}
+
+@keyframes veil {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-veil {
+  animation: veil 0.2s ease-out both;
+}
+
+.animate-pop {
+  animation: pop 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.task-row {
+  transition:
+    background-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.task-row:hover {
+  background: #fcfcfe;
+}
+
+.task-row.done .task-title {
+  color: #a4a6ae;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+[data-theme='dark'] {
+  --background: 228 24% 10%;
+  --foreground: 225 20% 92%;
+  --border: 228 17% 22%;
+  --input: 228 17% 25%;
+  --card: 228 22% 14%;
+  --card-foreground: 225 20% 92%;
+  --card-border: 228 17% 22%;
+  --popover: 228 22% 16%;
+  --popover-foreground: 225 20% 92%;
+  --popover-border: 228 17% 28%;
+  --secondary: 228 18% 20%;
+  --secondary-foreground: 225 20% 92%;
+  --muted: 228 18% 20%;
+  --muted-foreground: 228 10% 65%;
+  --accent: 268 50% 24%;
+  --accent-foreground: 268 90% 86%;
+}
+
+[data-theme='dark'] .app-shell,
+[data-theme='dark'] .settings-dialog,
+[data-theme='dark'] .popover-panel {
+  color: hsl(var(--foreground));
+}
+
+[data-theme='dark'] .topbar,
+[data-theme='dark'] .summary-panel {
+  background: hsl(var(--card));
+}
+
+[data-theme='dark'] .search-field input,
+[data-theme='dark'] .settings-dialog input,
+[data-theme='dark'] .settings-dialog select {
+  border-color: hsl(var(--border));
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+}
+
+[data-theme='dark'] .notification-button {
+  border-color: hsl(var(--border));
+  background: hsl(var(--secondary));
+  color: hsl(var(--muted-foreground));
+}
+
+[data-theme='dark'] .task-row:hover {
+  background: hsl(var(--secondary));
+}
+
+[data-theme='dark'] .task-title {
+  color: hsl(225 16% 78%);
+}
+
+[data-theme='dark'] .settings-dialog .bg-white,
+[data-theme='dark'] .popover-panel .bg-white {
+  background: hsl(var(--secondary));
+}
+
+[data-theme='dark'] .settings-dialog .text-\[\#4c4f5a\],
+[data-theme='dark'] .settings-dialog .text-\[\#777986\],
+[data-theme='dark'] .settings-dialog .text-\[\#8f919c\] {
+  color: hsl(var(--muted-foreground));
+}
+
+[data-theme='dark'] .settings-dialog .bg-\[\#f3f4f7\] {
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+}
+
+[data-theme='dark'] .settings-dialog .bg-\[\#f7f4ff\] {
+  background: hsl(268 35% 22%);
+}
+
+[data-theme='dark'] .task-dialog {
+  color: #ffffff;
+  background: hsl(var(--card));
+  border-color: hsl(var(--border));
+}
+
+[data-theme='dark'] .task-dialog * {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .task-dialog input,
+[data-theme='dark'] .task-dialog select {
+  border-color: hsl(var(--border));
+  background: hsl(var(--secondary));
+  color: #ffffff;
+}
+
+[data-theme='dark'] .task-dialog input::placeholder {
+  color: #e2e2ec;
+}
+
+[data-theme='dark'] .task-dialog option {
+  background: hsl(var(--secondary));
+  color: #ffffff;
+}
+
+[data-theme='dark'] .task-dialog .bg-\[\#f3f4f7\] {
+  background: hsl(var(--secondary));
+  color: #ffffff;
+}
+
+[data-theme='dark'] .account-panel,
+[data-theme='dark'] .account-panel * {
+  color: #000000;
+}
+
+[data-theme='dark'] .account-panel {
+  background: #ffffff;
+  border-color: #e7e6ed;
+}
+
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\] {
+  color: #000000;
+}
+
+[data-theme='dark'] .app-shell,
+[data-theme='dark'] .app-shell *,
+[data-theme='dark'] .popover-panel,
+[data-theme='dark'] .popover-panel *,
+[data-theme='dark'] .settings-dialog,
+[data-theme='dark'] .settings-dialog * {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .app-shell input,
+[data-theme='dark'] .app-shell input::placeholder,
+[data-theme='dark'] .settings-dialog input,
+[data-theme='dark'] .settings-dialog input::placeholder,
+[data-theme='dark'] .settings-dialog p,
+[data-theme='dark'] .popover-panel p {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .app-shell .text-\[\#a1a3ad\],
+[data-theme='dark'] .app-shell .text-\[\#9a9ca7\],
+[data-theme='dark'] .app-shell .text-\[\#a7a8b1\],
+[data-theme='dark'] .popover-panel .text-\[\#9a9ca7\],
+[data-theme='dark'] .popover-panel .text-\[\#9a9ca7\],
+[data-theme='dark'] .settings-dialog .text-\[\#999ba6\],
+[data-theme='dark'] .settings-dialog .text-\[\#a1a2ac\] {
+  color: #e2e2ec;
+}
+
+[data-theme='dark'] .app-shell svg,
+[data-theme='dark'] .popover-panel svg,
+[data-theme='dark'] .settings-dialog svg {
+  color: currentColor;
+}
+
+[data-theme='dark'] .account-panel,
+[data-theme='dark'] .account-panel * {
+  color: #000000;
+}
+
+[data-theme='dark'] .account-panel {
+  background: #ffffff;
+  border-color: #e7e6ed;
+}
+
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\],
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\] *,
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\] p {
+  color: #000000;
+}
+
+[data-theme='dark'] .app-shell .task-meta > span:first-child,
+[data-theme='dark'] .app-shell .task-meta > span:first-child * {
+  color: #000000;
+}
+
+[data-theme='dark'] .account-panel,
+[data-theme='dark'] .account-panel * {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .account-panel {
+  background: #202938;
+  border-color: #354154;
+}
+
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\] {
+  background: #29364a;
+}
+
+[data-theme='dark'] .account-panel .account-setting-item:hover {
+  background: #34435a;
+}
+
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\],
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\] *,
+[data-theme='dark'] .account-panel .bg-\[\#f5fdf8\] p {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .app-shell .bg-\[\#f2f2f4\],
+[data-theme='dark'] .app-shell .bg-\[\#f2f2f4\] * {
+  color: #ffffff;
+}
+
+@media (max-width: 680px) {
+  .task-meta {
+    gap: 0.4rem;
+  }
+
+  .task-meta > span:nth-child(2),
+  .task-meta > span:nth-child(3) {
+    display: none;
+  }
+}
