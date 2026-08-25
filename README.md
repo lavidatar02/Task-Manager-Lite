@@ -1,8 +1,10 @@
 # 🚀 Task Manager Lite
-> A modern and responsive task management web application for creating, organizing, and tracking tasks with Pending, In Progress, and Completed statuses.
+
+A modern, simple, and responsive task management application designed to help users organize tasks, track progress, and stay productive.
 
 ## 🌐 Live Demo
-🔗 **[Task Manager Lite](https://v0-taskmanagerlite-projects.vercel.app/)**
+
+🔗 [Task Manager Lite](https://v0-taskmanagerlite-projects.vercel.app/)
 
 ---
 
@@ -10,7 +12,7 @@
 
 **Task Manager Lite** is a modern task management web application that provides an easy way to create, organize, update, and track daily tasks.
 
-The application uses a clean dashboard interface where tasks can be managed according to their current status, making it easier to understand what needs to be completed and what is already in progress.
+The application uses a clean dashboard interface where tasks can be managed according to their current status, making it easier to understand what needs to be completed and what is currently in progress.
 
 ---
 
@@ -32,8 +34,6 @@ The application uses a clean dashboard interface where tasks can be managed acco
 ---
 
 ## 📊 Task Status
-
-Tasks can be organized into different stages:
 
 | Status             | Description                          |
 | ------------------ | ------------------------------------ |
@@ -102,25 +102,25 @@ Make sure you have installed:
 
 ### Installation
 
-**1. Clone the repository**
+#### 1. Clone the repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 ```
 
-**2. Navigate to the project**
+#### 2. Navigate to the project
 
 ```bash
 cd Task-Manager-Lite
 ```
 
-**3. Install dependencies**
+#### 3. Install dependencies
 
 ```bash
 npm install
 ```
 
-**4. Start the development server**
+#### 4. Start the development server
 
 ```bash
 npm run dev
@@ -147,7 +147,7 @@ screenshots/
 
 ## 🎯 Project Goals
 
-The main goals of Task Manager Lite are to:
+The main goals of **Task Manager Lite** are to:
 
 * Make task management simple
 * Improve productivity and organization
@@ -175,30 +175,18 @@ Some features that can be added in future versions:
 
 ## 👨‍💻 Developer
 
-### Lavi Shriram Datar
+**Lavi Shriram Datar**
 
-**B.Sc. Computer Science Graduate | Aspiring Software Developer**
-
-💻 **GitHub:** [github.com/lavidatar](https://github.com/lavidatar)
-
-🔗 **LinkedIn:** [linkedin.com/in/lavidatar](https://linkedin.com/in/lavidatar)
-
----
-
-## 🌐 Live Project
-
-🚀 **Try Task Manager Lite:**
-https://v0-taskmanagerlite-projects.vercel.app/
+*B.Sc. Computer Science Graduate*
 
 ---
 
 ## 📄 License
 
-This project is created for **educational and portfolio purposes**.
+This project is created for educational and portfolio purposes.
 
 ---
 
 ⭐ **If you found this project useful, consider giving it a star on GitHub!**
 
-Made with ❤️ by **Lavi Shriram Datar**
-
+**Made with ❤️ by Lavi Datar**
