@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Manager Lite</title>
+    <meta name="description" content="A focused task dashboard for organizing work." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search for any training you want" />
+        </label>
+        <div class="top-actions">
+          <button class="icon-button notification-button" id="notificationButton" aria-label="Notifications">♧<i></i></button>
+          <button class="profile-button" id="profileButton" aria-label="Open profile">♙</button>
+        </div>
+        <div class="popover notifications-popover" id="notificationsPopover">
+          <strong>Notifications</strong>
+          <p id="notificationText">You have no new notifications.</p>
+        </div>
+        <div class="popover account-panel" id="accountPanel"></div>
+      </header>
+
+      <section class="dashboard">
+        <div class="task-area">
+          <div class="dashboard-heading">
+            <div>
+              <p class="greeting" id="greeting"></p>
+              <h1>You've got <em id="taskCount">0</em> task today</h1>
+            </div>
+            <button class="primary-button" id="addButton">＋&nbsp; Add New</button>
+          </div>
+          <section>
+            <h2>On Hold</h2>
+            <div class="task-list" id="activeTasks"></div>
+          </section>
+          <section class="completed-section">
+            <div class="section-title">
+              <h2>Completed</h2><span class="inactive-badge">Inactive</span>
+            </div>
+            <div class="task-list" id="completedTasks"></div>
+          </section>
+        </div>
+        <aside class="summary-panel">
+          <h3>Results Summary</h3>
+          <div class="metric"><small>Completion Rate</small><strong id="completionRate">0%</strong></div>
+          <div class="metric"><small>Total Tasks</small><strong id="totalTasks">0</strong></div>
+          <div class="metric"><small>Completed</small><strong id="completedCount">0</strong></div>
+          <div class="metric"><small>Pending</small><strong id="pendingCount">0</strong></div>
+        </aside>
+      </section>
+    </main>
+
+    <div class="modal-backdrop" id="modalBackdrop" hidden>
+      <form class="modal" id="taskForm">
+        <button type="button" class="close-button" id="closeModal">×</button>
+        <p class="eyebrow" id="modalEyebrow">TASK</p>
+        <h2 id="modalTitle">Add New Task</h2>
+        <label>Task title<input id="taskTitle" required maxlength="120" /></label>
+        <label>Status<select id="taskStatus"><option>Pending</option><option>In Progress</option><option>Completed</option></select></label>
+        <label>Priority<select id="taskPriority"><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select></label>
+        <button class="primary-button full-button" type="submit">Save Task</button>
+      </form>
+    </div>
+
+    <div class="modal-backdrop" id="settingsBackdrop" hidden>
+      <section class="modal settings-modal" id="settingsModal"></section>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
