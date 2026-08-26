@@ -75,9 +75,9 @@ Task-Manager-Lite/
 │   └── [robots.txt]
 │
 ├── src/
-│   ├── components/
 │   ├── App.jsx
-│   └── main.jsx
+│   ├── main.jsx
+│   └── style.css
 │
 ├── .gitignore
 ├── README.md
