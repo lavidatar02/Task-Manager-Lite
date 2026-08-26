@@ -11,7 +11,6 @@ A modern, simple, and responsive task management application designed to help us
 ## 📌 About the Project
 
 **Task Manager Lite** is a modern task management web application that provides an easy way to create, organize, update, and track daily tasks.
-
 The application uses a clean dashboard interface where tasks can be managed according to their current status, making it easier to understand what needs to be completed and what is currently in progress.
 
 ---
@@ -77,7 +76,6 @@ Task-Manager-Lite/
 │
 ├── src/
 │   ├── components/
-│   ├── pages/
 │   ├── App.jsx
 │   └── main.jsx
 │
