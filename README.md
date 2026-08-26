@@ -71,8 +71,8 @@ The application focuses on a clean and modern dashboard experience with:
 Task-Manager-Lite/
 │
 ├── public/
-│   ├── [your existing public file 1]
-│   └── [your existing public file 2]
+│   ├── [favicon]
+│   └── [robots.txt]
 │
 ├── src/
 │   ├── components/
