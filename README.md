@@ -137,24 +137,26 @@ The application will then be available on your local development server.
 
 ---
 
-## 📸 Screenshots 
-   ```                                                                                                                                                                🏠Dashboard
-   
-   ![Dashboard alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/01_Dashboard.png?raw=true)
-   ⏳Pending Task
-   
-   ![Pending Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/02_Pending%20Tasks.png?raw=true)
-   
-   🔄In Progress Task
-   
-   ![In Progress Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/03_In%20Progress%20Tasks.png?raw=true)
-   
+## 📸 Screenshots
 
-   ✅Completed Task
-   
-   ![Completed Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/04_Completed%20Tasks.png?raw=true)
+### 🏠 Dashboard
 
-```
+![Dashboard](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/01_Dashboard.png?raw=true)
+
+### ⏳ Pending Tasks
+
+![Pending Tasks](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/02_Pending%20Tasks.png?raw=true)
+
+### 🔄 In Progress Tasks
+
+![In Progress Tasks](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/03_In%20Progress%20Tasks.png?raw=true)
+
+### ✅ Completed Tasks
+
+![Completed Tasks](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/04_Completed%20Tasks.png?raw=true)
+
+---
+
 ## 🎯 Project Goals
 
 The main goals of **Task Manager Lite** are to:
@@ -200,3 +202,4 @@ This project is created for educational and portfolio purposes.
 ⭐ **If you found this project useful, consider giving it a star on GitHub!**
 
 **Made with ❤️ by Lavi Datar**
+
