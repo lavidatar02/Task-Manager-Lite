@@ -72,18 +72,25 @@ The application focuses on a clean and modern dashboard experience with:
 Task-Manager-Lite/
 │
 ├── public/
-│   └── ...
+│   ├── [your existing public file 1]
+│   └── [your existing public file 2]
 │
 ├── src/
 │   ├── components/
 │   ├── pages/
 │   ├── App.jsx
-│   ├── main.jsx
-│   └── ...
+│   └── main.jsx
 │
-├── package.json
+├── .gitignore
 ├── README.md
-└── ...
+├── index.html
+├── package.json
+├── package-lock.json
+├── script.js
+├── style.css
+├── tsconfig.json
+├── vercel.json
+└── vite.config.ts
 ```
 
 > The exact structure may vary depending on the project configuration.
@@ -105,7 +112,7 @@ Make sure you have installed:
 #### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/lavidatar02/Task-Manager-Lite.git
 ```
 
 #### 2. Navigate to the project
@@ -130,18 +137,25 @@ The application will then be available on your local development server.
 
 ---
 
-## 📸 Screenshots
-```text
-screenshots/
-│
-├── dashboard.png
-├── pending-tasks.png
-├── in-progress.png
-└── completed-tasks.png
+## 📸 Screenshots 
+   ```text                                                                                                                                                            🏠Dashboard
+   
+   ![Dashboard alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/01_Dashboard.png?raw=true)
+
+   ⏳Pending Task
+   
+   ![Pending Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/02_Pending%20Tasks.png?raw=true)
+   
+   🔄In Progress Task
+   
+   ![In Progress Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/03_In%20Progress%20Tasks.png?raw=true)
+   
+
+   ✅Completed Task
+   
+   ![Completed Task_alt](https://github.com/lavidatar02/Task-Manager-Lite/blob/main/04_Completed%20Tasks.png?raw=true)
+
 ```
-
----
-
 ## 🎯 Project Goals
 
 The main goals of **Task Manager Lite** are to:
