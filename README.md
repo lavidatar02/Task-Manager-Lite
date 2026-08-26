@@ -131,9 +131,6 @@ The application will then be available on your local development server.
 ---
 
 ## 📸 Screenshots
-
-Add screenshots of the project here to showcase the interface.
-
 ```text
 screenshots/
 │
